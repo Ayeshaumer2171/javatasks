@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HOW TO GET THE OCUURENCE OF A STRING WHICH WE ENTER IN THE FIRST INPUT FIELD. -->
+
+<input type="text" id="bg" ><br>
+<input type="text"  id="the" >
+<button onclick="getOutput()">click</button>
+
+
+</body>
+<script>
+  var x;
+    function getOutput(){
+        x=document.getElementById('bg').value;
+        u=document.getElementById('the').value;
+
+        var result=countString( x, u)
+        console.log(result);
+
+    }
+
+    function countString(str, letter) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+    
+            if (str.charAt(i) == letter) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+</script>
+</html>

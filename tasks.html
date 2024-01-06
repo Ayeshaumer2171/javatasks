@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TO FIND THE OCCURRENCE OF ALPHABETS IN A GIVEN STRING. -->
+
+    <p>edujcation university</p>
+<input type="text" id="txtName" name="txtName" />
+   <button onClick="change()" > count</button>
+<p id="rk"></p>
+
+</body>
+<script>
+ function change() {
+             var s = "university student u";
+                var r = s.split("i").length-1 ;
+                document.getElementById("rk").innerHTML = r;
+ }
+ 
+</script>
+</html>

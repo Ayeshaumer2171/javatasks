@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- PROGRAAME TO FIND THE LENGTH OF GIVEN ARRAY  -->
+
+
+
+</body>
+<script>
+    
+var elements =[ 'optimis','fair','optimis','fair','golden','fair','encouraging','encouraging','fair'];
+
+elements.sort();
+
+var current = null;
+var count = 0;
+
+for(var i = 0; i < elements.length; i++)
+{
+    if(elements[i] != current)
+  {
+    if(count > 0)
+    {
+        document.write(current + " " + count + "<br/>");
+    }
+    current = elements[i];
+    count = 1;
+  }
+  else
+  {
+    count++;
+  }
+}
+
+if(count > 0)
+{
+    document.write(current + " " + count);
+}
+
+</script>
+</html>
